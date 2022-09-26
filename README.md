@@ -1,4 +1,14 @@
 
 ## CPE_Problem_Generator
 
-Auto generate 7 problems from CPE contest
+自動產生7題CPE試題
+除了必考題，其他題目保證沒考過
+
+|題目|題數|
+|---|---|
+1星必考題|1
+1星題|2
+2星題|2
+3星題|1
+4星題|1
+
