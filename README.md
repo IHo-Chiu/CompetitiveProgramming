@@ -14,3 +14,13 @@
 ## uva
 
 My code on uva onlinejudge.
+
+## note 
+
+bubble sort
+``` 
+for i in [0,n-1]
+    for j in [0,n-i-1]
+        if A[j] > A[j+1]
+            swap A[j], A[j+1]
+```
