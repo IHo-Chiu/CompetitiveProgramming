@@ -17,6 +17,11 @@ My code on uva onlinejudge.
 
 ## note 
 
+#### include all
+``` cpp
+#include<bits/stdc++.h>
+```
+
 #### bubble sort
 ``` 
 for i in [0,n-1]
@@ -56,4 +61,21 @@ int main()
         cout << it->first << it->second;
     }
 }
+```
+
+#### sort 
+``` cpp
+vector<int> v;
+
+// increasing
+std::sort(v.begin(), v.end());
+
+// decreasing
+std::sort(v.begin(), v.end(), std::greater<int>());
+
+// custom rule
+bool mycompare(int a, int b) {
+    return a > b;
+}
+std::sort(v.begin(), v.end(), mycompare);
 ```
