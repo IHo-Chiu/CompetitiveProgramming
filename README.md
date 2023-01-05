@@ -17,10 +17,43 @@ My code on uva onlinejudge.
 
 ## note 
 
-bubble sort
+#### bubble sort
 ``` 
 for i in [0,n-1]
     for j in [0,n-i-1]
         if A[j] > A[j+1]
             swap A[j], A[j+1]
+```
+
+#### unordered_map
+``` cpp
+#include<iostream>
+#include<unordered_map>
+
+int main()
+{
+    // allocate
+    std::unordered_map<int, int> mp;
+    std::unordered_map<int, int>::iterator it;
+    std::unordered_map<int, int>::const_iterator const_it;
+    
+    // find key
+    const_it = mp.find(x);
+    
+    // if not found
+    if (k == mp.end()) {
+        // create one
+        mp[x] = value;
+    }
+    else {
+        // get key and value
+        cout << const_it->first << const_it->second;
+    }
+    
+    // traverse key
+    for (it = mp.begin(); it != mp.end(); it++) {
+        // get key and value
+        cout << it->first << it->second;
+    }
+}
 ```
