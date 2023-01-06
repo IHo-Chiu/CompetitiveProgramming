@@ -79,3 +79,9 @@ bool mycompare(int a, int b) {
 }
 std::sort(v.begin(), v.end(), mycompare);
 ```
+
+#### int to string
+
+``` cpp
+string s = std::to_string(num)
+```
