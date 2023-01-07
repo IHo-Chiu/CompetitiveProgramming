@@ -30,11 +30,17 @@ for i in [0,n-1]
             swap A[j], A[j+1]
 ```
 
+#### vector
+``` cpp
+std::vector<int> v(size, value);
+
+v.push_back(x);
+x = v.pop_back();
+v.size();
+```
+
 #### unordered_map
 ``` cpp
-#include<iostream>
-#include<unordered_map>
-
 int main()
 {
     // allocate
