@@ -20,6 +20,7 @@ My code on uva onlinejudge.
 #### include all
 ``` cpp
 #include<bits/stdc++.h>
+using namespace std;
 ```
 
 #### bubble sort
@@ -32,21 +33,21 @@ for i in [0,n-1]
 
 #### vector
 ``` cpp
-std::vector<int> v(size, value);
+vector<int> v(size, value);
 
 v.push_back(x);
 x = v.pop_back();
 v.size();
 ```
 
-#### unordered_map
+#### unordered_map (hash map)
 ``` cpp
 int main()
 {
     // allocate
-    std::unordered_map<int, int> mp;
-    std::unordered_map<int, int>::iterator it;
-    std::unordered_map<int, int>::const_iterator const_it;
+    unordered_map<int, int> mp;
+    unordered_map<int, int>::iterator it;
+    unordered_map<int, int>::const_iterator const_it;
     
     // find key
     const_it = mp.find(x);
@@ -66,6 +67,12 @@ int main()
         // get key and value
         cout << it->first << it->second;
     }
+
+    // unordered_map copy
+    unordered_map<int, int> mp_copy = mp;
+
+    // unordered_map erase key
+    mp.erase(key);
 }
 ```
 
@@ -74,20 +81,41 @@ int main()
 vector<int> v;
 
 // increasing
-std::sort(v.begin(), v.end());
+sort(v.begin(), v.end());
 
 // decreasing
-std::sort(v.begin(), v.end(), std::greater<int>());
+sort(v.begin(), v.end(), greater<int>());
 
 // custom rule
 bool mycompare(int a, int b) {
     return a > b;
 }
-std::sort(v.begin(), v.end(), mycompare);
+sort(v.begin(), v.end(), mycompare);
 ```
 
 #### int to string
 
 ``` cpp
-string s = std::to_string(num)
+string s = to_string(num)
+```
+
+#### priority queue (heap)
+
+``` cpp
+priority_queue<int> pq;
+priority_queue<int> pq(v.begin(), v.end());
+priority_queue<int, vector<int>, greater<int>> pq;
+priority_queue<int, vector<int>, cmp> pq;
+
+struct cmp {
+    bool operator()(node a, node b) {
+        return a.x < b.x;
+    }
+};
+
+pq.push(x);
+x = pq.top();
+pq.pop();
+pq.empty();
+pq.size();
 ```
