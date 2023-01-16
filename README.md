@@ -129,10 +129,10 @@ pq.size();
 ``` cpp
 queue<int> q;
 
-pq.push(x);
-pq.pop();
-pq.empty();
-pq.size();
-pq.front();
-pq.back();
+q.push(x);
+q.pop();
+q.empty();
+q.size();
+q.front();
+q.back();
 ```
