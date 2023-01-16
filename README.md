@@ -38,6 +38,10 @@ vector<int> v(size, value);
 v.push_back(x);
 x = v.pop_back();
 v.size();
+
+// search
+vector<int>::iterator it = find(v.begin(), v.end(), x);
+index = distance(v.begin(), it);
 ```
 
 #### unordered_map (hash map)
@@ -118,4 +122,17 @@ x = pq.top();
 pq.pop();
 pq.empty();
 pq.size();
+```
+
+#### queue
+
+``` cpp
+queue<int> q;
+
+pq.push(x);
+pq.pop();
+pq.empty();
+pq.size();
+pq.front();
+pq.back();
 ```
