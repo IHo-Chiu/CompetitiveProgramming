@@ -97,10 +97,11 @@ bool mycompare(int a, int b) {
 sort(v.begin(), v.end(), mycompare);
 ```
 
-#### int to string
+#### string
 
 ``` cpp
 string s = to_string(num)
+string s = s.substr(start_idx, len);
 ```
 
 #### priority queue (heap)
