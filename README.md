@@ -90,11 +90,16 @@ sort(v.begin(), v.end());
 // decreasing
 sort(v.begin(), v.end(), greater<int>());
 
-// custom rule
-bool mycompare(int a, int b) {
+// sort using lambda
+sort(v.begin(), v.end(), [](const int& a, const int& b){
     return a > b;
-}
-sort(v.begin(), v.end(), mycompare);
+});
+
+// sort with some keys
+vector<vector<int>> v;
+sort(v.begin(), v.end(), [key](const vector<int>& a, const vector<int>& b){
+    return a[key] > b[key];
+});
 ```
 
 #### string
