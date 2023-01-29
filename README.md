@@ -42,6 +42,12 @@ v.size();
 // search
 vector<int>::iterator it = find(v.begin(), v.end(), x);
 index = distance(v.begin(), it);
+
+// concat
+v.insert(v.end(), v2.begin(), v2.end());
+
+// insert
+v.insert(v.begin()+index, val);
 ```
 
 #### unordered_map (hash map)
@@ -100,9 +106,6 @@ vector<vector<int>> v;
 sort(v.begin(), v.end(), [key](const vector<int>& a, const vector<int>& b){
     return a[key] > b[key];
 });
-
-// concat
-v.insert(v.end(), v2.begin(), v2.end());
 ```
 
 #### string
