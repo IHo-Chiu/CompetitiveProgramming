@@ -116,6 +116,7 @@ sort(v.begin(), v.end(), [key](const vector<int>& a, const vector<int>& b){
 ``` cpp
 string s = to_string(num)
 string s = s.substr(start_idx, len);
+int start_index = s.find(sub_str);
 ```
 
 #### priority queue (heap)
