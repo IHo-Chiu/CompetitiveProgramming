@@ -48,6 +48,9 @@ v.insert(v.end(), v2.begin(), v2.end());
 
 // insert
 v.insert(v.begin()+index, val);
+
+// reverse
+reverse(v.begin(), v.end());
 ```
 
 #### unordered_map (hash map)
